@@ -1,0 +1,107 @@
+%%
+%% Copyright 2024 AHFE Conference
+%%
+%% This file is part of the 'AHFE LaTeX template Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for AHFE Conference document class `AHFE Authoring Template'
+%% with bibliographic references
+%%
+
+\documentclass[unnumsec,webpdf,modern,small,namedate]{ahfe}%
+
+
+\graphicspath{{./fig/media/}}
+
+%\usepackage{showframe}
+%\jnlpages{1--x}%If query page, fix here start and end page
+
+\def\ausepcomma{}%if two author only activate this command
+
+\vol{0}
+
+\begin{document}
+
+
+\journaltitle{Advances in Human Factors and Sustainable Infrastructure}
+\DOI{10.54941/ahfe1xxxxx}
+\copyrightyear{2024}
+\pubyear{2024}
+
+\firstpage{1}
+
+\title[Example for Preparation of Your Own Paper]{Example for Preparation of Your Own~Paper}
+
+\authormark{Author Name}
+
+\author[1]{First Author}
+\author[2]{Second Author}
+
+\address[1]{Computational Intelligence and Complexity, Orlando, FL 32826, USA}
+\address[2]{Institute for Advanced Systems Engineering, Orlando, FL 32816, USA}
+
+\abstract{This is an example paper for you to duplicate exactly with respect to the required format of your Paper. This paper is not to be referenced or copied. All rights of the text in the main body of this paper are reserved by the authors. Please duplicate the style (fonts, font sizes, spacing, headings, reference style etc.) of your paper using this example. \textbf{Do not put your title in caps (prepare exactly as shown above)}, do not use titles for name, such as Ph.D., Prof., etc. \textbf{The recommended page size of full papers is 6 pages with a maximum of 8 pages (10~pages for applied research papers will be acceptable)}, including all paper components such as references, appendices, acknowledgements. When preparing your paper please use Harvard referencing style (unnumbered, alphabetized).}
+
+\keywords{Exemplary Paper, Human Systems Integration, Systems Engineering, Systems Modeling Language}
+
+\maketitle
+
+\section{INTRODUCTION}
+
+Human Factors Engineering involves understanding the need for comprehensive integration of human capabilities (cognitive, physical, sensory, and team dynamics) into a system design, beginning with conceptualization and continuing through system disposal. The primary concern for human factors engineering is the need to effectively integrate human capabilities with system interfaces to achieve optimal total system performance (use, operation, maintenance, support, and sustainment). Human factors engineering utilizes comprehensive task analyses to help define system functions and then allocates those functions to meet system requirements. The goal of HSI is to optimize total system performance, accommodating the characteristics of the user population that will operate, maintain, and support the system, and minimize life-cycle costs~\citep{folds2008building}. HSI experts work within the Systems Engineering (SE) process to ensure that all human considerations are integrated throughout system design, development, fielding, sustainment, and retirement. The attention to human systems integration in system development programs drove hundreds of human-centered design improvements. Efforts were concentrated to maximize total system performance through improvements in human workload, ease of maintenance, and personnel safety which resulted in a cost avoidance of billions of dollars and prevention of hundreds of fatalities and disabling injuries for the system~\citep{booher2003handbook}.
+
+\begin{figure}[!t]%Fig 1
+\centering
+\includegraphics[scale=1]{image1.pdf}
+\caption{Domains of human systems integration. (Adapted from U.S Air Force, 2005)\label{fig1}}
+\label{fig:figure1}
+\end{figure}
+
+
+\section{DEVELOPING HUMAN SYSTEMS INTEGRATION TOOLS TO SUPPORT SYSTEMS DESIGN}
+HSI experts contribute by ensuring that human capabilities and limitations are considered. It has become clear that treating the system as separate from the users results in poor performance and potential failure in the operational setting. Continued growth in technology has not delivered desired results. Systems engineers and others are beginning to understand the role humans play in technology systems. The core challenge is to balance successful hardware and software solutions with human friendly implementations. To define the requirements of humans as a fundamental system component, it is essential to understand the inherent capacity of user populations and their typical operational environment~\citep{booher2003human}. A description of a population’s capacity incorporates more than the basic anthropometrics or the cognitive capability of the average member of the user population~\citep{chapanis1996human}.
+
+\subsection{HSI as a Supportive Framework for Design and Modeling}
+HSI experts work within the framework, consisting of processes and methodologies, provided by systems engineering to ensure successful human systems integration. Methodologies include the familiar, carefully structured approach to meeting the functional and nonfunctional requirements. The systems engineering team relies on each branch to assist in analyzing customer requirements (see Figure~\ref{fig:figure1}) . Research has shown that HSI aspects and components remained, until today, with no established methodologies or integration tools to link various human aspects to systems engineering models due to two reasons~\citep{peleg2022model}: lack of relevant taxonomy linkage to SE needs and poor domain languages.
+
+Most of the requirements for human systems integration are derived from requirements for performance, efficiency, environmental, operational, maintenance, and training (see Table~\ref{tab:table1}). Some will be buried in mechanical and electrical requirements. One of the obstacles to realizing the substantial potential of HSI is the lack of clear articulation of human engineering requirements in the Statement of Work (SOW) or other authorizing documentation received from the customer, and the lack of a HSI software or architecture framework to track requirements changes.
+
+An important component of the human systems integration plan should be a verification and validation process that provides a clear way to evaluate the success of human systems integration. The human systems integration team should develop a test plan that can easily be incorporated into the systems engineering test plan. The effectiveness and performance of the human in the system needs to be validated as part of the overall system. It may seem more attractive to have stand-alone testing for human systems integration to show how the user interacts with controls or displays, how the user performs on a specific task. This methodology can address the performance of the human operator or maintainer with respect to the overall system. The most important thing is to develop a close relationship between human systems integration and systems engineering.
+
+
+\begin{table}[!t]%tab 1
+\centering
+\begin{minipage}{\textwidth}
+\caption{Sample human systems integration test parameters~\citep{folds2008building}}
+\label{tab:table1}
+\fontsize{10bp}{12pt}\selectfont
+\tabcolsep0pt\begin{tabular*}{\textwidth}{@{\extracolsep\fill}>{\raggedright}p{12pc}l@{\extracolsep\fill}}
+\toprule
+\textbf{Access to amenities} & \textbf{Illumination conditions}\\
+\midrule
+Acoustics & Maintenance/installation safety\\
+Atmosphere (temperature, pressure, humidity, quality, etc.) & Maintenance/installation time to complete\\
+\botrule
+\end{tabular*}
+\end{minipage}
+\end{table}
+
+\section{CONCLUSION}
+
+Human Systems Integration (HSI) is becoming a critical piece of complex systems to help resolve system designs. This proposal has presented a growing body of knowledge for HSI and new technologies that are being developed to capture critical aspects of HSI. The development of a framework for Human Systems Integration with Systems Modeling Language (SysML) will enable teams to collaborate better by providing a common language and process to distribute models and share information. The Human Systems Integration component in systems engineering will be able to recognize the human as an integral element of every system by representing behaviors, constraints, states, and goals through-out the entire lifecycle.
+
+\section*{ACKNOWLEDGMENT}
+
+The authors would like to acknowledge.
+
+\bibliographystyle{agsm}
+\bibliography{ahfe-sample}
+
+\end{document}
